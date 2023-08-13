@@ -10,10 +10,10 @@ import com.giovanka.newscompose.screens.ScreenContent
 import com.giovanka.newscompose.BottomBarScreen
 
 @Composable
-fun HomeNavGraph(navController: NavHostController) {
+fun DashboardNavGraph(navController: NavHostController) {
     NavHost(
         navController = navController,
-        route = Graph.HOME,
+        route = Graph.DASHBOARD,
         startDestination = BottomBarScreen.Home.route
     ) {
         composable(route = BottomBarScreen.Home.route) {

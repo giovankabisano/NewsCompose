@@ -8,6 +8,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 
 @Composable
@@ -17,6 +18,7 @@ fun ScreenContent(name: String, onClick: () -> Unit) {
         contentAlignment = Alignment.Center
     ) {
         Text(
+            color = Color.Red,
             modifier = Modifier.clickable { onClick() },
             text = name,
             fontSize = MaterialTheme.typography.bodyLarge.fontSize,

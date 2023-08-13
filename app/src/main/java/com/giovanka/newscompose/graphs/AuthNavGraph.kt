@@ -13,7 +13,7 @@ fun NavGraphBuilder.authNavGraph(navController: NavHostController) {
 //            LoginContent(
 //                onClick = {
 //                    navController.popBackStack()
-//                    navController.navigate(Graph.HOME)
+//                    navController.navigate(Graph.DASHBOARD)
 //                },
 //                onSignUpClick = {
 //                    navController.navigate(AuthScreen.SignUp.route)
