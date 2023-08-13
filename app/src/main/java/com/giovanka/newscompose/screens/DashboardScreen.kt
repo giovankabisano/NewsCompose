@@ -1,6 +1,8 @@
 package com.giovanka.newscompose.screens
 
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.RowScope
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.*
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -32,7 +34,9 @@ fun DashboardScreen(navController: NavHostController = rememberNavController()) 
     Scaffold(
         bottomBar = { BottomBar(navController = navController) }
     ) {
-        DashboardNavGraph(navController = navController)
+        Box(modifier = Modifier.padding(it)) {
+            DashboardNavGraph(navController = navController)
+        }
     }
 }
 
